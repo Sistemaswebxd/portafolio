@@ -341,32 +341,121 @@
         <div class="heading">
             <h2>Mi <span>Portafolio</span></h2>
         </div>
-<section id="mis-proyectos" class="proyectos">
-  <div class="container">
-    <h2 class="titulo-seccion">Mis Proyectos</h2>
-    <p class="descripcion-seccion">Aquí puedes ver algunos de los proyectos que he realizado recientemente.</p>
-    
-    <div class="proyectos-lista">
-      <div class="proyecto">
-        <img src="https://d1ih8jugeo2m5m.cloudfront.net/2024/08/ejemplo_de_pagina_web_landing.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS5TIUU6FW2UPTSFZ%2F20240808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240808T183518Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Signature=cd50bfc7b6de71c6c6563a0f96589482c9c61f8a332f6377a4584c114594a4ac" alt="Proyecto 1" class="imagen-proyecto">
-        <h3 class="nombre-proyecto">Proyecto 1</h3>
-        <p class="descripcion-proyecto">Breve descripción del proyecto 1.</p>
-      </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Proyectos</title>
+  <style>
+    /* Estructura básica de la sección */
+    .proyectos {
+      padding: 40px 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .titulo-seccion {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .descripcion-seccion {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+
+    /* Estilo para la lista de proyectos */
+    .proyectos-lista {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .proyecto {
+      flex: 1 1 calc(33.33% - 20px);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+    }
+
+    .imagen-proyecto {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .nombre-proyecto {
+      font-size: 1.5rem;
+      margin-top: 15px;
+    }
+
+    .descripcion-proyecto {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    /* Responsividad */
+    @media (max-width: 768px) {
+      .proyecto {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .proyecto {
+        flex: 1 1 100%;
+      }
+      .titulo-seccion {
+        font-size: 2rem;
+      }
+      .descripcion-seccion {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="mis-proyectos" class="proyectos">
+    <div class="container">
+      <h2 class="titulo-seccion">Mis Proyectos</h2>
+      <p class="descripcion-seccion">Aquí puedes ver algunos de los proyectos que he realizado recientemente.</p>
       
-      <div class="proyecto">
-        <img src="https://d1ih8jugeo2m5m.cloudfront.net/2024/08/ejemplo_de_pagina_web_landing.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS5TIUU6FW2UPTSFZ%2F20240808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240808T183518Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Signature=cd50bfc7b6de71c6c6563a0f96589482c9c61f8a332f6377a4584c114594a4ac" alt="Proyecto 2" class="imagen-proyecto">
-        <h3 class="nombre-proyecto">Proyecto 2</h3>
-        <p class="descripcion-proyecto">Breve descripción del proyecto 2.</p>
-      </div>
-      
-      <div class="proyecto">
-        <img src="https://d1ih8jugeo2m5m.cloudfront.net/2024/08/ejemplo_de_pagina_web_landing.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAS5TIUU6FW2UPTSFZ%2F20240808%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240808T183518Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Signature=cd50bfc7b6de71c6c6563a0f96589482c9c61f8a332f6377a4584c114594a4ac" alt="Proyecto 3" class="imagen-proyecto">
-        <h3 class="nombre-proyecto">Proyecto 3</h3>
-        <p class="descripcion-proyecto">Breve descripción del proyecto 3.</p>
+      <div class="proyectos-lista">
+        <div class="proyecto">
+          <img src="ruta-imagen-proyecto1.jpg" alt="Proyecto 1" class="imagen-proyecto">
+          <h3 class="nombre-proyecto">Proyecto 1</h3>
+          <p class="descripcion-proyecto">Breve descripción del proyecto 1.</p>
+        </div>
+        
+        <div class="proyecto">
+          <img src="ruta-imagen-proyecto2.jpg" alt="Proyecto 2" class="imagen-proyecto">
+          <h3 class="nombre-proyecto">Proyecto 2</h3>
+          <p class="descripcion-proyecto">Breve descripción del proyecto 2.</p>
+        </div>
+        
+        <div class="proyecto">
+          <img src="ruta-imagen-proyecto3.jpg" alt="Proyecto 3" class="imagen-proyecto">
+          <h3 class="nombre-proyecto">Proyecto 3</h3>
+          <p class="descripcion-proyecto">Breve descripción del proyecto 3.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</body>
+</html>
 
        
     <!-------------------- Portfolio Area (End) -------------------->

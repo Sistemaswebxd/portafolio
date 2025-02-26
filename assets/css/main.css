@@ -47,7 +47,7 @@
 
 *::selection{
     color: var(--white);
-    background-color: var(--blue); 
+    background-color: var(--purple); 
 }
 
 html{
